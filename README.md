@@ -1,21 +1,22 @@
 # CMPE-273
+
 Enterprise Distributed System
 
-#Assignment 2 :
+# Assignment 2 :
 
 aws lambda integration with api gateway and dynamo.
 
-Abstract
+# Abstract
 
 Pizza ordering system using AWS Lambda for handling business logic, API Gateway for REST interface, and DynamoDB for data persistence.
 
-Requirements
+# Requirements
 
-I. Pizza Menu CRUD APIs
+# I. Pizza Menu CRUD APIs
 
 You need to implement these REST endpoints to manage menu for any pizza store.
 
-POST /menu
+# POST /menu
 Request
 
 {
@@ -78,7 +79,8 @@ Response
         "Sun": "11am-12pm"
     }
 }
-PUT /menu/{menu-id}
+
+# PUT /menu/{menu-id}
 Update the existing menu to add the "Vegetable" option.
 
 Response
@@ -99,7 +101,8 @@ II. Pizza Order Processing APIs
 In this part II, you need to implement these REST endpoints to take orders from customers.
 
 NOTE: customer management feature is not required.
-POST /order
+
+# POST /order
 Request
 
 {   
@@ -128,7 +131,8 @@ Response
 {
     "Message": "Which size do you want? 1. Slide, 2. Small, 3. Medium, 4. Large, 5. X-Large"
 }
-PUT /order/{order_id}
+
+# PUT /order/{order_id}
 Request
 
 {   
@@ -142,7 +146,8 @@ Response
     "Message": "Your order costs $15.00. We will email you when the order is ready. Thank you!"
 }
 
-3. GET /order/{order-id}
+
+# 3. GET /order/{order-id}
 
 _Request_
 
